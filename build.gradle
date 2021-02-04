@@ -108,7 +108,7 @@ dependencies {
         api "io.jmix.data:jmix-eclipselink-starter:${snapshotOr(dataVersion)}"
 
         api "io.jmix.data:jmix-data-hibernate:${snapshotOr(dataVersion)}"
-        api "io.jmix.data:jmix-data-hibernate-starter:${snapshotOr(dataVersion)}"
+        api "io.jmix.data:jmix-hibernate-starter:${snapshotOr(dataVersion)}"
 
         api "io.jmix.dynattr:jmix-dynattr:${snapshotOr(dynattrVersion)}"
         api "io.jmix.dynattr:jmix-dynattr-ui:${snapshotOr(dynattrVersion)}"
