@@ -102,10 +102,9 @@ dependencies {
         api "io.jmix.cuba:jmix-cuba-starter:${snapshotOr(cubaVersion)}"
 
         api "io.jmix.data:jmix-data:${snapshotOr(dataVersion)}"
-        api "io.jmix.data:jmix-data-starter:${snapshotOr(dataVersion)}"
 
-        api "io.jmix.data:jmix-data-eclipselink:${snapshotOr(dataVersion)}"
-        api "io.jmix.data:jmix-data-eclipselink-starter:${snapshotOr(dataVersion)}"
+        api "io.jmix.data:jmix-eclipselink:${snapshotOr(dataVersion)}"
+        api "io.jmix.data:jmix-eclipselink-starter:${snapshotOr(dataVersion)}"
 
         api "io.jmix.data:jmix-data-hibernate:${snapshotOr(dataVersion)}"
         api "io.jmix.data:jmix-data-hibernate-starter:${snapshotOr(dataVersion)}"
