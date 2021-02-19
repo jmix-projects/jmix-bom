@@ -71,7 +71,7 @@ dependencies {
 
     def baseVersion = '0.3.0'
     def auditVersion = baseVersion
-    def coreVersion = baseVersion
+    def coreVersion = '0.3.1'
     def cubaVersion = baseVersion
     def dataVersion = baseVersion
     def dynattrVersion = baseVersion
@@ -85,10 +85,10 @@ dependencies {
     def mapsVersion = baseVersion
     def restVersion = baseVersion
     def datatoolsVersion = baseVersion
-    def securityVersion = baseVersion
+    def securityVersion = '0.3.1'
     def sessionsVersion = baseVersion
-    def translationsVersion = baseVersion
-    def uiVersion = baseVersion
+    def translationsVersion = '0.3.1'
+    def uiVersion = '0.3.1'
     def reportsVersion = baseVersion
 
     constraints {
