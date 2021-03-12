@@ -70,25 +70,25 @@ dependencies {
     api platform("org.springframework.boot:spring-boot-dependencies:2.4.2")
 
     def baseVersion = '0.3.0'
-    def auditVersion = baseVersion
-    def coreVersion = '0.3.1'
-    def cubaVersion = baseVersion
-    def dataVersion = baseVersion
-    def dynattrVersion = baseVersion
-    def emailVersion = baseVersion
+    def auditVersion = '0.3.2'
+    def coreVersion = '0.3.2'
+    def cubaVersion = '0.3.2'
+    def dataVersion = '0.3.2'
+    def dynattrVersion = '0.3.2'
+    def emailVersion = '0.3.2'
     def emailtemplatesVersion = baseVersion
-    def grapesJsVersion = baseVersion
+    def grapesJsVersion = '0.3.2'
     def graphqlVersion = baseVersion
-    def imapVersion = baseVersion
-    def localfsVersion = baseVersion
+    def imapVersion = '0.3.2'
+    def localfsVersion = '0.3.2'
     def awsfsVersion = baseVersion
-    def mapsVersion = baseVersion
-    def restVersion = baseVersion
-    def datatoolsVersion = baseVersion
-    def securityVersion = '0.3.1'
-    def sessionsVersion = baseVersion
-    def translationsVersion = '0.3.1'
-    def uiVersion = '0.3.1'
+    def mapsVersion = '0.3.2'
+    def restVersion = '0.3.2'
+    def datatoolsVersion = '0.3.2'
+    def securityVersion = '0.3.2'
+    def sessionsVersion = '0.3.2'
+    def translationsVersion = '0.3.2'
+    def uiVersion = '0.3.2'
     def reportsVersion = baseVersion
 
     constraints {
