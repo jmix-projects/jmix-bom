@@ -72,7 +72,7 @@ dependencies {
     def baseVersion = '0.9.0'
     def auditVersion = baseVersion
     def bpmVersion = baseVersion
-    def coreVersion = baseVersion
+    def coreVersion = '0.9.1'
     def cubaVersion = baseVersion
     def dataVersion = baseVersion
     def dynattrVersion = baseVersion
@@ -89,7 +89,7 @@ dependencies {
     def securityVersion = baseVersion
     def sessionsVersion = baseVersion
     def translationsVersion = baseVersion
-    def uiVersion = baseVersion
+    def uiVersion = '0.9.1'
     def reportsVersion = baseVersion
 
     if (isTrialBuild()) {
