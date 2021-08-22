@@ -233,6 +233,7 @@ dependencies {
 
         api "io.jmix.ui:jmix-ui:${snapshotOr(uiVersion)}"
         api "io.jmix.ui:jmix-ui-data:${snapshotOr(uiVersion)}"
+        api "io.jmix.ui:jmix-ui-data-container:${snapshotOr(uiVersion)}"
         api "io.jmix.ui:jmix-ui-export:${snapshotOr(uiVersion)}"
         api "io.jmix.ui:jmix-ui-export-starter:${snapshotOr(uiVersion)}"
         api "io.jmix.ui:jmix-ui-test-assist:${snapshotOr(uiVersion)}"
