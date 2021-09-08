@@ -80,24 +80,24 @@ dependencies {
     def cubaVersion = baseVersion
     def dashboardsVersion = baseVersion
     def dataVersion = baseVersion
-    def datatoolsVersion = baseVersion
+    def datatoolsVersion = '1.0.2'
     def dynattrVersion = baseVersion
     def emailVersion = baseVersion
-    def emailtemplatesVersion = baseVersion
+    def emailtemplatesVersion = '1.0.2'
     def grapesJsVersion = baseVersion
-    def graphqlVersion = baseVersion
+    def graphqlVersion = '1.0.2'
     def imapVersion = baseVersion
     def ldapVersion = baseVersion
     def localfsVersion = baseVersion
     def multitenancyVersion = baseVersion
     def mapsVersion = baseVersion
-    def reportsVersion = baseVersion
+    def reportsVersion = '1.0.2'
     def restVersion = baseVersion
-    def searchVersion = baseVersion
-    def securityVersion = baseVersion
+    def searchVersion = '1.0.2'
+    def securityVersion = '1.0.2'
     def sessionsVersion = baseVersion
     def translationsVersion = baseVersion
-    def uiVersion = baseVersion
+    def uiVersion = '1.0.2'
 
     if (isTrialBuild()) {
         mapsVersion = mapsVersion + '.trial'
