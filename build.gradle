@@ -76,8 +76,8 @@ dependencies {
     def awsqueueVerion = baseVersion
     def awssecurityVerion = baseVersion
     def bpmVersion = baseVersion
-    def coreVersion = baseVersion
-    def cubaVersion = baseVersion
+    def coreVersion = '1.0.3'
+    def cubaVersion = '1.0.3'
     def dashboardsVersion = baseVersion
     def dataVersion = baseVersion
     def datatoolsVersion = '1.0.2'
@@ -91,13 +91,13 @@ dependencies {
     def localfsVersion = baseVersion
     def multitenancyVersion = baseVersion
     def mapsVersion = baseVersion
-    def reportsVersion = '1.0.2'
+    def reportsVersion = '1.0.3'
     def restVersion = baseVersion
     def searchVersion = '1.0.2'
     def securityVersion = '1.0.2'
     def sessionsVersion = baseVersion
     def translationsVersion = baseVersion
-    def uiVersion = '1.0.2'
+    def uiVersion = '1.0.3'
 
     if (isTrialBuild()) {
         mapsVersion = mapsVersion + '.trial'
