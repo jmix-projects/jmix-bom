@@ -85,6 +85,7 @@ dependencies {
     def dynattrVersion = baseVersion
     def emailVersion = baseVersion
     def emailtemplatesVersion = baseVersion
+    def flowuiVersion = baseVersion
     def grapesJsVersion = baseVersion
     def graphqlVersion = baseVersion
     def imapVersion = baseVersion
@@ -175,6 +176,9 @@ dependencies {
         api "io.jmix.emailtemplates:jmix-emailtemplates-ui:${snapshotOr(emailtemplatesVersion)}"
         api "io.jmix.emailtemplates:jmix-emailtemplates-starter:${snapshotOr(emailtemplatesVersion)}"
         api "io.jmix.emailtemplates:jmix-emailtemplates-ui-starter:${snapshotOr(emailtemplatesVersion)}"
+
+        api "io.jmix.flowui:jmix-flowui:${snapshotOr(flowuiVersion)}"
+        api "io.jmix.flowui:jmix-flowui-starter:${snapshotOr(flowuiVersion)}"
 
         api "io.jmix.grapesjs:jmix-grapesjs:${snapshotOr(grapesJsVersion)}"
         api "io.jmix.grapesjs:jmix-grapesjs-starter:${snapshotOr(grapesJsVersion)}"
@@ -291,6 +295,9 @@ dependencies {
         api "com.vaadin:vaadin-compatibility-client:$vaadinVersion"
         api "com.vaadin:vaadin-themes:$vaadinVersion"
         api 'com.vaadin:vaadin-spring:3.1.1'
+
+        def vaadinFlowVersion = '21.0.3'
+        api "com.vaadin:vaadin-spring-boot-starter:$vaadinFlowVersion"
 
         api 'org.webjars:ace-builds:1.1.9-1-cuba'
         api 'org.webjars:bootstrap:4.5.3-0-jmix'
