@@ -71,35 +71,35 @@ dependencies {
     api platform('software.amazon.awssdk:bom:2.16.69')
 
     def baseVersion = '1.1.0'
-    def auditVersion = baseVersion
+    def auditVersion = '1.1.1'
     def awsfsVersion = baseVersion
     def awssecurityVerion = baseVersion
-    def bpmVersion = baseVersion
+    def bpmVersion = '1.1.1'
     def cloudqueueVerion = baseVersion
-    def coreVersion = baseVersion
-    def cubaVersion = baseVersion
+    def coreVersion = '1.1.1'
+    def cubaVersion = '1.1.1'
     def dashboardsVersion = baseVersion
-    def dataVersion = baseVersion
+    def dataVersion = '1.1.1'
     def dataimportVersion = baseVersion
-    def datatoolsVersion = baseVersion
+    def datatoolsVersion = '1.1.1'
     def dynattrVersion = baseVersion
     def emailVersion = baseVersion
     def emailtemplatesVersion = baseVersion
     def grapesJsVersion = baseVersion
     def graphqlVersion = baseVersion
     def imapVersion = baseVersion
-    def ldapVersion = baseVersion
+    def ldapVersion = '1.1.1'
     def localfsVersion = baseVersion
-    def multitenancyVersion = baseVersion
+    def multitenancyVersion = '1.1.1'
     def mapsVersion = baseVersion
-    def reportsVersion = baseVersion
-    def restVersion = baseVersion
-    def searchVersion = baseVersion
-    def securityVersion = baseVersion
+    def reportsVersion = '1.1.1'
+    def restVersion = '1.1.1'
+    def searchVersion = '1.1.1'
+    def securityVersion = '1.1.1'
     def sessionsVersion = baseVersion
-    def translationsVersion = baseVersion
-    def uiVersion = baseVersion
-    def webdavVersion = baseVersion
+    def translationsVersion = '1.1.1'
+    def uiVersion = '1.1.1'
+    def webdavVersion = '1.1.1'
 
     if (isTrialBuild()) {
         mapsVersion = mapsVersion + '.trial'
