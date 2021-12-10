@@ -264,6 +264,9 @@ dependencies {
         api "io.jmix.webdav:jmix-webdav-ui-starter:${snapshotOr(webdavVersion)}"
         api "io.jmix.webdav:jmix-webdav-rest-starter:${snapshotOr(webdavVersion)}"
 
+        api 'gr.netmechanics.jmix:azurefs:1.1.0'
+        api 'gr.netmechanics.jmix:azurefs-starter:1.1.0'
+
         api 'com.google.guava:guava:31.0.1-jre'
         api 'commons-io:commons-io:2.11.0'
         api 'commons-fileupload:commons-fileupload:1.4'
