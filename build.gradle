@@ -74,10 +74,10 @@ dependencies {
     def auditVersion = '1.1.2'
     def awsfsVersion = baseVersion
     def awssecurityVerion = baseVersion
-    def bpmVersion = '1.1.2'
+    def bpmVersion = '1.1.3'
     def cloudqueueVerion = baseVersion
-    def coreVersion = '1.1.2'
-    def cubaVersion = '1.1.2'
+    def coreVersion = '1.1.3'
+    def cubaVersion = '1.1.3'
     def dashboardsVersion = baseVersion
     def dataVersion = '1.1.1'
     def dataimportVersion = baseVersion
@@ -86,19 +86,19 @@ dependencies {
     def emailVersion = baseVersion
     def emailtemplatesVersion = baseVersion
     def grapesJsVersion = baseVersion
-    def graphqlVersion = baseVersion
+    def graphqlVersion = '1.1.3'
     def imapVersion = baseVersion
     def ldapVersion = '1.1.1'
     def localfsVersion = baseVersion
-    def multitenancyVersion = '1.1.1'
+    def multitenancyVersion = '1.1.3'
     def mapsVersion = baseVersion
-    def reportsVersion = '1.1.1'
+    def reportsVersion = '1.1.3'
     def restVersion = '1.1.1'
     def searchVersion = '1.1.1'
-    def securityVersion = '1.1.1'
+    def securityVersion = '1.1.3'
     def sessionsVersion = baseVersion
     def translationsVersion = '1.1.1'
-    def uiVersion = '1.1.2'
+    def uiVersion = '1.1.3'
     def webdavVersion = '1.1.2'
 
     if (isTrialBuild()) {
