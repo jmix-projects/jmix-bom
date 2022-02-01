@@ -99,7 +99,7 @@ dependencies {
     def sessionsVersion = baseVersion
     def translationsVersion = '1.1.1'
     def uiVersion = '1.1.3'
-    def webdavVersion = '1.1.2'
+    def webdavVersion = '1.1.3'
 
     if (isTrialBuild()) {
         mapsVersion = mapsVersion + '.trial'
