@@ -269,6 +269,12 @@ dependencies {
 
         api 'de.diedavids.jmix.wizard:jmix-wizard:1.0.0'
         api 'de.diedavids.jmix.wizard:jmix-wizard-starter:1.0.0'
+        
+        api 'de.diedavids.jmix.softreference:jmix-entity-soft-reference:1.1.0'
+        api 'de.diedavids.jmix.softreference:jmix-entity-soft-reference-starter:1.1.0'
+
+        api 'de.diedavids.jmix.softreference:jmix-entity-soft-reference-cuba:1.1.0'
+        api 'de.diedavids.jmix.softreference:jmix-entity-soft-reference-cuba-starter:1.1.0'
 
         api 'com.google.guava:guava:31.0.1-jre'
         api 'commons-io:commons-io:2.11.0'
