@@ -91,6 +91,7 @@ dependencies {
     def ldapVersion = '1.1.1'
     def localfsVersion = baseVersion
     def multitenancyVersion = '1.1.3'
+    def miniofsVersion = '1.1.0'
     def mapsVersion = baseVersion
     def reportsVersion = '1.1.3'
     def restVersion = '1.1.1'
@@ -198,6 +199,9 @@ dependencies {
         api "io.jmix.maps:jmix-maps-ui-widgets:${snapshotOr(mapsVersion)}"
         api "io.jmix.maps:jmix-maps-starter:${snapshotOr(mapsVersion)}"
         api "io.jmix.maps:jmix-maps-ui-starter:${snapshotOr(mapsVersion)}"
+        
+        api "io.jmix.miniofs:jmix-miniofs:${miniofsVersion}"
+        api "io.jmix.miniofs:jmix-miniofs-starter:${miniofsVersion}"
 
         api "io.jmix.multitenancy:jmix-multitenancy:${snapshotOr(multitenancyVersion)}"
         api "io.jmix.multitenancy:jmix-multitenancy-ui:${snapshotOr(multitenancyVersion)}"
