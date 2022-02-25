@@ -109,8 +109,6 @@ dependencies {
         version = version + '.trial'
     }
     
-    def miniofsVersion = '1.1.0'
-
     constraints {
         api "io.jmix.audit:jmix-audit:${snapshotOr(auditVersion)}"
         api "io.jmix.audit:jmix-audit-ui:${snapshotOr(auditVersion)}"
@@ -278,8 +276,8 @@ dependencies {
         api 'de.diedavids.jmix.softreference:jmix-entity-soft-reference-cuba:1.1.0'
         api 'de.diedavids.jmix.softreference:jmix-entity-soft-reference-cuba-starter:1.1.0'
         
-        api "dev.warhammster.jmix:miniofs:${miniofsVersion}"
-        api "dev.warhammster.jmix:miniofs-starter:${miniofsVersion}"
+        api "dev.warhammster.jmix:miniofs:1.1.0"
+        api "dev.warhammster.jmix:miniofs-starter:1.1.0"
 
         api 'com.google.guava:guava:31.0.1-jre'
         api 'commons-io:commons-io:2.11.0'
