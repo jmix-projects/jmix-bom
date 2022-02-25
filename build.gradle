@@ -74,11 +74,11 @@ dependencies {
     def auditVersion = '1.1.2'
     def awsfsVersion = baseVersion
     def awssecurityVerion = baseVersion
-    def bpmVersion = '1.1.3'
+    def bpmVersion = '1.1.4'
     def cloudqueueVerion = baseVersion
     def coreVersion = '1.1.3'
     def cubaVersion = '1.1.3'
-    def dashboardsVersion = baseVersion
+    def dashboardsVersion = '1.1.4'
     def dataVersion = '1.1.1'
     def dataimportVersion = baseVersion
     def datatoolsVersion = '1.1.1'
@@ -92,12 +92,12 @@ dependencies {
     def localfsVersion = baseVersion
     def multitenancyVersion = '1.1.3'
     def mapsVersion = baseVersion
-    def reportsVersion = '1.1.3'
-    def restVersion = '1.1.1'
+    def reportsVersion = '1.1.4'
+    def restVersion = '1.1.4'
     def searchVersion = '1.1.1'
     def securityVersion = '1.1.3'
     def sessionsVersion = baseVersion
-    def translationsVersion = '1.1.1'
+    def translationsVersion = '1.1.4'
     def uiVersion = '1.1.3'
     def webdavVersion = '1.1.3'
 
