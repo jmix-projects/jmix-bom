@@ -398,6 +398,12 @@ dependencies {
         
         api 'cn.jmix:jmixcn-alifs:1.0.0'
         api 'cn.jmix:jmixcn-alifs-starter:1.0.0'
+        
+        api 'cn.jmix:jmixcn-tencentfs:1.0.0'
+        api 'cn.jmix:jmixcn-tencentfs-starter:1.0.0'
+        
+        api 'cn.jmix:jmixcn-baidufs:1.0.0'
+        api 'cn.jmix:jmixcn-baidufs-starter:1.0.0'
 
         runtime 'org.hsqldb:hsqldb:2.4.1'
     }
