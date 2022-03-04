@@ -71,7 +71,7 @@ dependencies {
     api platform('software.amazon.awssdk:bom:2.16.69')
 
     def baseVersion = '1.2.0'
-    def appSettingsVersion = baseVersion
+    def appSettingsVersion = '1.2.1'
     def auditVersion = baseVersion
     def awsfsVersion = baseVersion
     def awssecurityVerion = baseVersion
@@ -86,9 +86,9 @@ dependencies {
     def datatoolsVersion = baseVersion
     def dynattrVersion = baseVersion
     def emailVersion = baseVersion
-    def emailtemplatesVersion = baseVersion
+    def emailtemplatesVersion = '1.2.1'
     def grapesJsVersion = baseVersion
-    def graphqlVersion = baseVersion
+    def graphqlVersion = '1.2.1'
     def imapVersion = baseVersion
     def ldapVersion = baseVersion
     def localfsVersion = baseVersion
