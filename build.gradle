@@ -294,6 +294,9 @@ dependencies {
         api "io.jmix.webdav:jmix-webdav-starter:${snapshotOr(webdavVersion)}"
         api "io.jmix.webdav:jmix-webdav-ui-starter:${snapshotOr(webdavVersion)}"
         api "io.jmix.webdav:jmix-webdav-rest-starter:${snapshotOr(webdavVersion)}"
+        
+        api 'dev.warhammster.jmix:miniofs:1.2.0'
+        api 'dev.warhammster.jmix:miniofs-starter:1.2.0'
 
         api 'com.google.guava:guava:31.0.1-jre'
         api 'commons-io:commons-io:2.11.0'
