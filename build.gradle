@@ -67,62 +67,49 @@ javaPlatform {
 }
 
 dependencies {
-    api platform("org.springframework.boot:spring-boot-dependencies:2.6.3")
+    api platform("org.springframework.boot:spring-boot-dependencies:2.5.9")
     api platform('software.amazon.awssdk:bom:2.16.69')
 
-    def baseVersion = '1.2.0'
-    def appSettingsVersion = '1.2.1'
-    def auditVersion = baseVersion
+    def baseVersion = '1.1.0'
+    def auditVersion = '1.1.2'
     def awsfsVersion = baseVersion
     def awssecurityVerion = baseVersion
-    def bpmVersion = baseVersion
-    def businessCalendarVersion = baseVersion
+    def bpmVersion = '1.1.4'
     def cloudqueueVerion = baseVersion
-    def coreVersion = baseVersion
-    def cubaVersion = baseVersion
-    def dashboardsVersion = baseVersion
-    def dataVersion = baseVersion
+    def coreVersion = '1.1.3'
+    def cubaVersion = '1.1.3'
+    def dashboardsVersion = '1.1.4'
+    def dataVersion = '1.1.1'
     def dataimportVersion = baseVersion
-    def datatoolsVersion = baseVersion
+    def datatoolsVersion = '1.1.1'
     def dynattrVersion = baseVersion
     def emailVersion = baseVersion
-    def emailtemplatesVersion = '1.2.1'
+    def emailtemplatesVersion = baseVersion
     def grapesJsVersion = baseVersion
-    def graphqlVersion = '1.2.1'
+    def graphqlVersion = '1.1.3'
     def imapVersion = baseVersion
-    def ldapVersion = baseVersion
+    def ldapVersion = '1.1.1'
     def localfsVersion = baseVersion
-    def multitenancyVersion = baseVersion
+    def multitenancyVersion = '1.1.3'
     def mapsVersion = baseVersion
-    def notificationsVersion = baseVersion
-    def oidcVersion = baseVersion
-    def quartzVersion = baseVersion
-    def reportsVersion = baseVersion
-    def restVersion = baseVersion
-    def samlVersion = baseVersion
-    def searchVersion = baseVersion
-    def securityVersion = baseVersion
+    def reportsVersion = '1.1.4'
+    def restVersion = '1.1.4'
+    def searchVersion = '1.1.1'
+    def securityVersion = '1.1.3'
     def sessionsVersion = baseVersion
-    def translationsVersion = baseVersion
-    def uiVersion = baseVersion
-    def webdavVersion = baseVersion
+    def translationsVersion = '1.1.4'
+    def uiVersion = '1.1.3'
+    def webdavVersion = '1.1.3'
 
     if (isTrialBuild()) {
-        bpmVersion = bpmVersion + '.trial'
-        businessCalendarVersion = businessCalendarVersion + '.trial'
         mapsVersion = mapsVersion + '.trial'
-        notificationsVersion = notificationsVersion + '.trial'
+        bpmVersion = bpmVersion + '.trial'
         webdavVersion = webdavVersion + '.trial'
 
         version = version + '.trial'
     }
-
+    
     constraints {
-        api "io.jmix.appsettings:jmix-appsettings:${snapshotOr(appSettingsVersion)}"
-        api "io.jmix.appsettings:jmix-appsettings-starter:${snapshotOr(appSettingsVersion)}"
-        api "io.jmix.appsettings:jmix-appsettings-ui:${snapshotOr(appSettingsVersion)}"
-        api "io.jmix.appsettings:jmix-appsettings-ui-starter:${snapshotOr(appSettingsVersion)}"
-
         api "io.jmix.audit:jmix-audit:${snapshotOr(auditVersion)}"
         api "io.jmix.audit:jmix-audit-ui:${snapshotOr(auditVersion)}"
         api "io.jmix.audit:jmix-audit-starter:${snapshotOr(auditVersion)}"
@@ -141,11 +128,6 @@ dependencies {
         api "io.jmix.bpm:jmix-bpm-ui-starter:${snapshotOr(bpmVersion)}"
         api "io.jmix.bpm:jmix-bpm-rest:${snapshotOr(bpmVersion)}"
         api "io.jmix.bpm:jmix-bpm-rest-starter:${snapshotOr(bpmVersion)}"
-
-        api "io.jmix.businesscalendar:jmix-businesscalendar:${snapshotOr(businessCalendarVersion)}"
-        api "io.jmix.businesscalendar:jmix-businesscalendar-starter:${snapshotOr(businessCalendarVersion)}"
-        api "io.jmix.businesscalendar:jmix-businesscalendar-ui:${snapshotOr(businessCalendarVersion)}"
-        api "io.jmix.businesscalendar:jmix-businesscalendar-ui-starter:${snapshotOr(businessCalendarVersion)}"
 
         api "io.jmix.cloudqueue:jmix-cloudqueue-api:${snapshotOr(cloudqueueVerion)}"
         api "io.jmix.cloudqueue:jmix-cloudqueue-aws-starter:${snapshotOr(cloudqueueVerion)}"
@@ -222,16 +204,6 @@ dependencies {
         api "io.jmix.multitenancy:jmix-multitenancy-starter:${snapshotOr(multitenancyVersion)}"
         api "io.jmix.multitenancy:jmix-multitenancy-ui-starter:${snapshotOr(multitenancyVersion)}"
 
-        api "io.jmix.notifications:jmix-notifications:${snapshotOr(notificationsVersion)}"
-        api "io.jmix.notifications:jmix-notifications-ui:${snapshotOr(notificationsVersion)}"
-        api "io.jmix.notifications:jmix-notifications-starter:${snapshotOr(notificationsVersion)}"
-        api "io.jmix.notifications:jmix-notifications-ui-starter:${snapshotOr(notificationsVersion)}"
-
-        api "io.jmix.oidc:jmix-oidc:${snapshotOr(oidcVersion)}"
-        api "io.jmix.oidc:jmix-oidc-starter:${snapshotOr(oidcVersion)}"
-
-        api "io.jmix.quartz:jmix-quartz:${snapshotOr(quartzVersion)}"
-        api "io.jmix.quartz:jmix-quartz-starter:${snapshotOr(quartzVersion)}"
 
         api "io.jmix.reports:jmix-reports:${snapshotOr(reportsVersion)}"
         api "io.jmix.reports:jmix-reports-ui:${snapshotOr(reportsVersion)}"
@@ -242,9 +214,6 @@ dependencies {
 
         api "io.jmix.rest:jmix-rest:${snapshotOr(restVersion)}"
         api "io.jmix.rest:jmix-rest-starter:${snapshotOr(restVersion)}"
-
-        api "io.jmix.saml:jmix-saml:${snapshotOr(samlVersion)}"
-        api "io.jmix.saml:jmix-saml-starter:${snapshotOr(samlVersion)}"
 
         api "io.jmix.search:jmix-search:${snapshotOr(searchVersion)}"
         api "io.jmix.search:jmix-search-starter:${snapshotOr(searchVersion)}"
@@ -269,7 +238,6 @@ dependencies {
         api "io.jmix.translations:jmix-translations-de:${snapshotOr(translationsVersion)}"
         api "io.jmix.translations:jmix-translations-zh-cn:${snapshotOr(translationsVersion)}"
         api "io.jmix.translations:jmix-translations-ro:${snapshotOr(translationsVersion)}"
-        api "io.jmix.translations:jmix-translations-el:${snapshotOr(translationsVersion)}"
 
         api "io.jmix.ui:jmix-ui:${snapshotOr(uiVersion)}"
         api "io.jmix.ui:jmix-ui-data:${snapshotOr(uiVersion)}"
@@ -295,9 +263,21 @@ dependencies {
         api "io.jmix.webdav:jmix-webdav-starter:${snapshotOr(webdavVersion)}"
         api "io.jmix.webdav:jmix-webdav-ui-starter:${snapshotOr(webdavVersion)}"
         api "io.jmix.webdav:jmix-webdav-rest-starter:${snapshotOr(webdavVersion)}"
+
+        api 'gr.netmechanics.jmix:azurefs:1.1.0'
+        api 'gr.netmechanics.jmix:azurefs-starter:1.1.0'
+
+        api 'de.diedavids.jmix.wizard:jmix-wizard:1.0.0'
+        api 'de.diedavids.jmix.wizard:jmix-wizard-starter:1.0.0'
         
-        api 'dev.warhammster.jmix:miniofs:1.2.0'
-        api 'dev.warhammster.jmix:miniofs-starter:1.2.0'
+        api 'de.diedavids.jmix.softreference:jmix-entity-soft-reference:1.1.0'
+        api 'de.diedavids.jmix.softreference:jmix-entity-soft-reference-starter:1.1.0'
+
+        api 'de.diedavids.jmix.softreference:jmix-entity-soft-reference-cuba:1.1.0'
+        api 'de.diedavids.jmix.softreference:jmix-entity-soft-reference-cuba-starter:1.1.0'
+        
+        api "dev.warhammster.jmix:miniofs:1.1.0"
+        api "dev.warhammster.jmix:miniofs-starter:1.1.0"
 
         api 'com.google.guava:guava:31.0.1-jre'
         api 'commons-io:commons-io:2.11.0'
@@ -310,8 +290,8 @@ dependencies {
         api 'org.apache.commons:commons-compress:1.21'
         api 'org.dom4j:dom4j:2.1.3'
         api 'org.eclipse.persistence:jakarta.persistence:2.2.3'
-        api 'org.eclipse.persistence:org.eclipse.persistence.core:2.7.9-6-jmix'
-        api 'org.eclipse.persistence:org.eclipse.persistence.jpa:2.7.9-6-jmix'
+        api 'org.eclipse.persistence:org.eclipse.persistence.core:2.7.9-5-jmix'
+        api 'org.eclipse.persistence:org.eclipse.persistence.jpa:2.7.9-5-jmix'
         api 'org.eclipse.persistence:org.eclipse.persistence.extension:2.7.9'
         api 'org.glassfish:javax.el:3.0.1-b12'
 
@@ -415,15 +395,6 @@ dependencies {
         api 'io.vavr:vavr:0.9.3'
         api 'org.jetbrains:annotations:22.0.0'
         api 'commons-codec:commons-codec:1.15'
-        
-        api 'gr.netmechanics.jmix:azurefs:1.2.0'
-        api 'gr.netmechanics.jmix:azurefs-starter:1.2.0'
-
-        api 'io.github.pierresj:jmix-huaweifs:1.0.7'
-        api 'io.github.pierresj:jmix-huaweifs-starter:1.0.7'
-
-        api 'io.github.pierresj:jmix-qiniufs:1.0.2'
-        api 'io.github.pierresj:jmix-qiniufs-starter:1.0.2'
 
         runtime 'org.hsqldb:hsqldb:2.4.1'
     }
