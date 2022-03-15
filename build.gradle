@@ -70,8 +70,8 @@ dependencies {
     api platform("org.springframework.boot:spring-boot-dependencies:2.6.3")
     api platform('software.amazon.awssdk:bom:2.16.69')
 
-    def baseVersion = '1.3.0'
-    def appSettingsVersion = baseVersion
+    def baseVersion = '1.2.0'
+    def appSettingsVersion = '1.2.1'
     def auditVersion = baseVersion
     def awsfsVersion = baseVersion
     def awssecurityVerion = baseVersion
@@ -86,9 +86,9 @@ dependencies {
     def datatoolsVersion = baseVersion
     def dynattrVersion = baseVersion
     def emailVersion = baseVersion
-    def emailtemplatesVersion = baseVersion
+    def emailtemplatesVersion = '1.2.1'
     def grapesJsVersion = baseVersion
-    def graphqlVersion = baseVersion
+    def graphqlVersion = '1.2.1'
     def imapVersion = baseVersion
     def ldapVersion = baseVersion
     def localfsVersion = baseVersion
@@ -295,6 +295,9 @@ dependencies {
         api "io.jmix.webdav:jmix-webdav-starter:${snapshotOr(webdavVersion)}"
         api "io.jmix.webdav:jmix-webdav-ui-starter:${snapshotOr(webdavVersion)}"
         api "io.jmix.webdav:jmix-webdav-rest-starter:${snapshotOr(webdavVersion)}"
+        
+        api 'dev.warhammster.jmix:miniofs:1.2.0'
+        api 'dev.warhammster.jmix:miniofs-starter:1.2.0'
 
         api 'com.google.guava:guava:31.0.1-jre'
         api 'commons-io:commons-io:2.11.0'
@@ -412,6 +415,9 @@ dependencies {
         api 'io.vavr:vavr:0.9.3'
         api 'org.jetbrains:annotations:22.0.0'
         api 'commons-codec:commons-codec:1.15'
+        
+        api 'gr.netmechanics.jmix:azurefs:1.2.0'
+        api 'gr.netmechanics.jmix:azurefs-starter:1.2.0'
 
         runtime 'org.hsqldb:hsqldb:2.4.1'
     }
