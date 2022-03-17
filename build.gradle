@@ -411,6 +411,15 @@ dependencies {
         api 'io.vavr:vavr:0.9.3'
         api 'org.jetbrains:annotations:22.0.0'
         api 'commons-codec:commons-codec:1.15'
+        
+        api 'cn.jmix:jmixcn-alifs:1.0.0'
+        api 'cn.jmix:jmixcn-alifs-starter:1.0.0'
+
+        api 'cn.jmix:jmixcn-tencentfs:1.0.0'
+        api 'cn.jmix:jmixcn-tencentfs-starter:1.0.0'
+
+        api 'cn.jmix:jmixcn-baidufs:1.0.0'
+        api 'cn.jmix:jmixcn-baidufs-starter:1.0.0'
 
         runtime 'org.hsqldb:hsqldb:2.4.1'
     }
